@@ -88,7 +88,7 @@ class user():
 
 class wizard(user):
     def __init__(self,name,power ):
-        #super().__init__(email)
+        #super().__init__(email)  ...super class method...
         self.name =name
         self.power=power
     def attack(self):
@@ -139,3 +139,4 @@ print(list(filter(odd_output,[1,2,3]))) #Using Filter
 my_list = [1,2,3]
 your_list=(10,20,30)
 print(list(zip(my_list,your_list))) #Using Zip
+

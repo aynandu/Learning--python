@@ -1,0 +1,24 @@
+GIt
+----
+git config --global user.name
+git init  #to Create a git into new project.. created base
+git status
+git add File_Name.extension   #File adding mentioned files to git marked as green color
+git add --all   #for adding all files from the dir to git marked as green color
+git commit -m "initial commitment"   #-m denote message ; from this step .. new version created .. but no edit occured..
+git log  0r git log --all   #show all the versions .... commits thath made... which head or master... log is to view all the commits that we made
+git checkout type_commitid  or git checkout master   #Moving to each version by using commit id.. using master comment to move to latest version
+git branch branch_name  #creating a new branch in commit if like (Head,master,branch_name)
+git merge branch_name    # for merging a branch2 to branch 1.. first checkout  b1 (now b1 is possessing) then use git merg b2...conflict or recurssive or fast - forwrad merge (i for insert commitment message and esc then :WQ))
+git diff     #get the version difference  by listing out data content
+git stash  # Wipping out all the data before commitment method
+git log --all --decorate --graph   #graphical shows at side
+
+Remote Code
+-----------
+git remote add Git_remote_Name  Github_url  #connect or save your project to new reporsitory github space
+git remote  or git remote -v   #reprository  name and url details
+git push Git_remote_Name  Master/Feature/..     #Push the Project update to github
+git pull   #if master was your default project..else checkout master 'git pull' .. if any team member updated on same project in git hub. use this to fetch and merge the latest upate from github.done before your push.
+git fetch   #Clarification required . if any team member updated on same project in git hub. use this to fetch only the latest upate from github.done before your push.
+git clone Git_hub_Url_Link  #creating a clone of existing project.

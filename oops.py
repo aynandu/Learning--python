@@ -88,7 +88,7 @@ class user():
 
 class wizard(user):
     def __init__(self,name,power ):
-        #super().__init__(email)  ...super class method...
+        #super().__init__(email)  ... super class method...
         self.name =name
         self.power=power
     def attack(self):
@@ -140,3 +140,30 @@ my_list = [1,2,3]
 your_list=(10,20,30)
 print(list(zip(my_list,your_list))) #Using Zip
 
+from functools import reduce    # Using reducer
+def accumilator(acc , item):
+    print(acc , item)
+    return acc + item
+
+print(reduce(accumilator,my_list,0))
+
+print("lambda function (by map):  ",list(map(lambda item : item*2 , my_list)))
+print("lambda function (by filter):  ",list(filter(lambda item : item%2!=0 , my_list)))
+print("lambda function (by reducer):  ",reduce(lambda acce, item:acce+item, my_list))
+
+my_petname = ['tobby','marco','tunny']
+
+def Capitilize(items):
+    return items.upper()
+
+print('Map : ',list(map(Capitilize,my_petname))) 
+
+my_string = ['a','b','c','d']
+my_numbers = [5,4,3,2]
+
+print(list(zip(my_string,sorted(my_numbers))))
+scores = [73, 20, 65, 19, 76, 100, 88,50]
+def mark_Scored(items):
+    return items>50
+
+print(list(filter(mark_Scored,scores)))

@@ -13,6 +13,7 @@ git merge branch_name    # for merging a branch2 to branch 1.. first checkout  b
 git diff     #get the version difference  by listing out data content
 git stash  # Wipping out all the data before commitment method
 git log --all --decorate --graph   #graphical shows at side
+echo "" >   file name # create new file
 
 Remote Code
 -----------

@@ -36,20 +36,12 @@ super_list1.append(5)
 print(super_list1[0])
 print(issubclass(SuperList,list))
 
-def Multiply_by2(l1): #Pure Function
-    multipl_number=[]
-    for item in l1:
-        multipl_number.append(item*2)
-    return multipl_number
+#finding square using Lambda
+my_list =[5,4,3]
 
-print(Multiply_by2([1,2,3]))
+print(list(map(lambda item: item **2 , my_list)))
 
-#or
-def Addition_2(item): 
-    return item*2
-print(list(map(Addition_2,[1,2,3]))) #Using Map 
-
-def odd_output (item):
-    return item %2 !=0
-
-print(list(filter(odd_output,[1,2,3]))) #Using Filter
+#finding List sorting using lambda
+a=[(0,2),(4,3),(10,-1),(9,9)]
+a.sort(key=lambda x:x[1])
+print (a)

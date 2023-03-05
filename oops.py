@@ -146,13 +146,13 @@ def accumilator(acc , item):
     return acc + item
 
 print(reduce(accumilator,my_list,0))
-
+#*******************************  LAMBDA  ***************************************
 print("lambda function (by map):  ",list(map(lambda item : item*2 , my_list)))
 print("lambda function (by filter):  ",list(filter(lambda item : item%2!=0 , my_list)))
 print("lambda function (by reducer):  ",reduce(lambda acce, item:acce+item, my_list))
-
+#*******************************  LAMBDA  ***************************************
 my_petname = ['tobby','marco','tunny']
-
+ 
 def Capitilize(items):
     return items.upper()
 

@@ -24,7 +24,7 @@ print('\nDict Comprehension(only even): ',my_dict)  # Dict Comprehension
 
 my_dict2= {value : value*2 for value in [1,2,3]}  # Dict Comprehension
 print('\nDict Comprehension: ',my_dict2)
-#*******************************  Decorators *************************************** using fuctions as verables/ parameter for other functions. 
+#*******************************  Decorators *************************************** using fuctions as varables/ parameter for other functions. 
 # high order functions - a function can accept or return or both another  function
 def my_decorators(func):
     def wrap_func():
@@ -82,3 +82,12 @@ print("\nExcercise : " , duplicates)
 
 setter = set(['q','q','a','a','a','d','d'])
 print(list(setter)) 
+#*******************************  Generators  ***************************************
+def generator_function(num):
+    for i in range(num):
+        yield i*2       # From this loop Generator's Can able to Execute one at a time. that's what generator's do.
+                        # next function in print used to call output
+g=generator_function(10)
+print(next(g))
+next(g)
+print(next(g))

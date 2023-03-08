@@ -46,7 +46,7 @@ a=[(0,2),(4,3),(10,-1),(9,9)]
 a.sort(key=lambda x:x[1])
 print (a)
 
-# Decorator Excercise
+#*******************************  Decorator Excercise  ***************************************
 user1 = {
     'name': 'Sorna',
     'valid': True 
@@ -67,3 +67,34 @@ def message_friends(user):
     print('message has been sent')
 
 message_friends(user1)
+
+#*******************************  Generators Excercise *************************************** 
+def special_function(iterable):
+    iterator = iter(iterable)
+    while True:
+        try:
+            print(iterator)
+            print(next(iterator))
+        except StopIteration:
+            break
+special_function([1,2,3])      #Normal Function with Iteration
+class MyGenRange():
+    current =0
+    def __init__(self, first,last):
+        self.first = first
+        self.last = last
+    def __iter__(self):     #iter allows to create iterable ..looping class
+        return self
+    def __next__(self):
+        if MyGenRange.current <self.last:
+            num=MyGenRange.current
+            MyGenRange.current +=1
+            return num
+        raise StopIteration
+    
+
+gen = MyGenRange(0,100)
+                        # Make this work!! creating our on range func using Generators
+for i in gen:               
+    print(i)
+

@@ -98,3 +98,34 @@ gen = MyGenRange(0,100)
 for i in gen:               
     print(i)
 
+#***********************Excecise 2
+def fib(number):
+    a = 0
+    b = 1
+    for i in range(number):
+        yield a
+        temp =a
+        a=b
+        b=temp+b
+
+for i in fib(20):
+    print(i)                #using Generators  _____1
+
+def fib2(number):
+    a = 0
+    b = 1
+    result = []
+    for i in range(number):
+        result.append(a)
+        temp =a
+        a=b
+        b=temp+b
+    return result
+
+print(fib2(20))             #using List _____2
+
+inp =int(input("value : "))
+fact=1                           #n10=n10xn9xn8...n1
+for i in range(1,inp+1):
+    fact= fact *i
+    print(fact)

@@ -86,8 +86,9 @@ print(list(setter))
 def generator_function(num):
     for i in range(num):
         yield i*2       # From this loop Generator's Can able to Execute one at a time. that's what generator's do.
-                        # next function in print used to call output
+                        # next function in print used to call output 
+                        # iter or __iter__ function used to call next until stopIteration
 g=generator_function(10)
 print(next(g))
 next(g)
-print(next(g))
+print(next(g)) 

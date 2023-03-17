@@ -92,3 +92,27 @@ g=generator_function(10)
 print(next(g))
 next(g)
 print(next(g)) 
+#*******************************  Counter,defaultdict,Ordereddict  ***************************************
+from collections import Counter,defaultdict,OrderedDict 
+l1=(1,2,3,4,4)
+sentence = 'bla blaa bla   python'
+print(Counter(l1))
+print(Counter(sentence))   #.................(counter)
+dictonary=defaultdict(lambda:'doesnot exits',{'a':1,'b':2})
+print(dictonary['c'])      #...................(defaultdict)
+d=OrderedDict()
+d['a'] = 1
+d['b'] = 2
+d2=OrderedDict()
+d2['a'] = 1
+d2['b'] = 2
+
+print(d==d2)  #...................(OrderedDict)
+# Also you can create two dict and compare its position of data; normal dict does focus on positions, if comparing value in both of it return true. here position matter's
+                        
+
+
+
+
+
+

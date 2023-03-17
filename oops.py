@@ -88,7 +88,7 @@ class user():
 
 class wizard(user):
     def __init__(self,name,power ):
-        #super().__init__(email)  ... super class method...
+        #super().__init__(email)  #... super class method...
         self.name =name
         self.power=power
     def attack(self):

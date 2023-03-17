@@ -1,5 +1,5 @@
 #********Error Handling >>>*************Try - Except - Else ************** 
-""" 
+
 while True:
     try:
         age = int(input("Enter Your Age : "))
@@ -14,7 +14,7 @@ while True:
         break
     finally:
         print("ok done") 
-"""
+
  #break function not working!
 def sum(num1, num2):
     try:
@@ -32,3 +32,11 @@ while True:
         raise ValueError('Hey cut it out')  # creating a Error.. 
     except ZeroDivisionError:
         print("Please enter a number Other than 0")
+
+#********Debugging using pdb*************
+import pdb
+def add(num1,num2):
+    pdb.set_trace()
+    return num+num2
+
+add(1,"shdj")

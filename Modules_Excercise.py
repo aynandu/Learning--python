@@ -4,6 +4,3 @@ import shopping.more_shopping.shopping_cart    #**********************(2)
 print(divi(10,2))
 
 print(shopping.more_shopping.shopping_cart.shop(100))
-
-
-

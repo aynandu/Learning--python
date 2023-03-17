@@ -129,3 +129,25 @@ fact=1                           #n10=n10xn9xn8...n1
 for i in range(1,inp+1):
     fact= fact *i
     print(fact)
+#......................IO - Module - Translator Excercise...........
+    from translate import Translator
+translator=Translator(to_lang="ja")
+try:
+    with open("./app/newfile.txt",mode='r') as excer:
+        textchanger= excer.read()
+        trans=translator.translate(textchanger)
+        print(trans)
+        
+except FileNotFoundError as err:
+    print("your file path")
+#................Email Validation.... regular expression
+
+validation =re.compile(r"(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)")
+password= re.compile(r"[a-zA-Z0-9@#_]{8,}[0-9]")
+passchecker="Nandu@1234"
+gmail_id= "ng@g.com"
+z=validation.search(gmail_id)
+check=password.fullmatch(passchecker)
+print(check)
+if validation.search(gmail_id):print(z)
+else: print("incorrect email id, Try again")

@@ -45,6 +45,7 @@ def class_X(mark1,mark2):
     return mark_students(mark1,mark2)
 total_marks = class_X(90,90)
 print(total_marks)
+
 def highest_even (argeven):
     total_even = []
     for value in argeven:

@@ -1,0 +1,9 @@
+pip install virtualenv
+
+virtualenv env
+
+.\Scripts\activate          
+
+Set-ExecutionPolicy Unrestricted #set windows executution policy to unrestrictrd brfore
+
+pip install flask flask-sqlalchemy

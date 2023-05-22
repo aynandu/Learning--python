@@ -6,7 +6,7 @@ app = Flask(__name__)  # denote this file
 
 def index():
     #return "Hello World"
-    return render_template('index.html')
+    return render_template('./templete/index.html')
 
 
 if __name__=="__main__":

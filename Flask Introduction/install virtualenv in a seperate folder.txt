@@ -7,3 +7,15 @@ virtualenv env
 Set-ExecutionPolicy Unrestricted #set windows executution policy to unrestrictrd brfore
 
 pip install flask flask-sqlalchemy
+
+
+step 1
+python -m venv env  # to create env in a folder
+
+step 2
+.\env\Scripts\activate       #activate it .. make sure folder path is right
+
+step 3
+deactivate
+
+

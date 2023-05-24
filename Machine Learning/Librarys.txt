@@ -1,0 +1,8 @@
+Library Used in JupyterNB using VSCode (.ipynb)
+
+1.panda - https://elitedatascience.com/python-cheat-sheet 
+2.seaborn - https://seaborn.pydata.org/
+3.bokeh - https://docs.bokeh.org/en/latest/index.html
+
+4.sklearn - https://scikit-learn.org/stable/
+5. joblib  - https://scikit-learn.org/stable/model_persistence.html

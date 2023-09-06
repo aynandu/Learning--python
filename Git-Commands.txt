@@ -28,3 +28,4 @@ git pull   #if master was your default project..else checkout master 'git pull' 
 git fetch   #Clarification required . if any team member updated on same project in git hub. use this to fetch only the latest upate from github.done before your push.
 git clone Git_hub_Url_Link  #creating a clone of existing project.
 git pull --rebase Git_remote_Name Branch_Name # edit made in github may lead to collision in push method. use this method to rebranch and then  push it to github
+git pull <remote name> <branch name>
